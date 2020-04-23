@@ -2,4 +2,5 @@
 sites/*
 sites/*/
 !sites/all/
+!sites/all/*
 
