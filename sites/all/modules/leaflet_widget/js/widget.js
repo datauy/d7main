@@ -45,7 +45,7 @@
       var elem = $(':input.geocoder', $('#' + id ).parent());
       var handler = Drupal.settings.leaflet_widget_widget[id].geocoder.handler;
       var map = Drupal.leaflet_widget[id];
-      var url = location.protocol + '//' + location.host + Drupal.settings.basePath + 'geocoder/service/' + handler+ '?output=json&data=' + Drupal.encodePath(elem.val());
+      var url = location.protocol + '//' + location.host + Drupal.settings.basePath + 'geocoder/service/' + handler+ '?output=json&data=' + Drupal.encodePath(elem.val()) + ' Cordoba Argentina';
 
       var throbber = $('<div class="ajax-progress ajax-progress-throbber"><div class="throbber">&nbsp;</div></div>');
       elem.after(throbber);
